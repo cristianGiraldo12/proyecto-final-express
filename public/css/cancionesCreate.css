@@ -1,0 +1,56 @@
+:root {
+    --azul: #363753;
+    --gris: #b9bac0;
+    --blanco: #FEFEFE;
+    --verde: #5CD2C6;
+    --azulAgua: #8effff;
+    --rosado: #f5bdf5;
+}
+
+body{
+    background-color: var(--azul);
+}
+
+h1{
+    color: var(--blanco);
+    font-size: 40px;
+}
+
+.contenedorPadre{
+    display: grid;
+    place-items: center;
+    background-color: var(--azul);
+    width: 45%;
+    position: relative;
+    left: 30%;
+    top: 20%;
+    top: 70px;
+    box-shadow: 1px 2px 20px 15px var(--azulAgua);
+    border-radius: 10px;
+}
+
+.encabesados{
+    color: var(--blanco);
+}
+
+.botonAgregar{
+    background-color: var(--azulAgua);
+    font-size: 15px;
+    border-radius: 20px;
+    border: solid 10px var(--azulAgua);
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.botonVolver{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    border: solid 8px red;
+}
+
+.botones{
+    text-align: center;
+    margin-bottom: 20px;
+}

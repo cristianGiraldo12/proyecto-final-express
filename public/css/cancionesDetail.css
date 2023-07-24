@@ -1,0 +1,34 @@
+:root {
+    --azul: #363753;
+    --gris: #8a8c95;
+    --blanco: #FEFEFE;
+    --verde: #5CD2C6;
+    --azulAgua: #8effff;
+    --rosado: #f5bdf5;
+}
+
+body{
+    background-color: var(--azul);
+}
+
+.contenedorPadre{
+    display: grid;
+    place-items: center;
+    background-color: var(--azul);
+    font-size: 20px;
+    width: 40%;
+    position: relative;
+    left: 30%;
+    top: 20%;
+    top: 70px;
+    box-shadow: 1px 2px 20px 15px var(--azulAgua);
+    border-radius: 10px;
+}
+
+p{
+    color: var(--blanco);
+}
+
+h1{
+    color: var(--blanco);
+}

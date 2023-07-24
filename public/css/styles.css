@@ -1,0 +1,39 @@
+:root {
+    --azul: #363753;
+    --gris: #DFE3EE;
+    --blanco: #FEFEFE;
+    --verde: #5CD2C6;
+    --azulAgua: #8effff;
+    --rosado: #ffeeff;
+}
+
+body{
+    background-color: var(--azul);
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+.contenedor-padre{
+    display: grid;
+    place-items: center ;
+    position: relative;
+    top: 150px;
+}
+
+h1{
+    color: var(--blanco);
+    font-size: 40px;
+}
+
+.botones{
+    background-color: var(--azul);
+    color: var(--blanco);
+    border-bottom: solid 4px var(--azulAgua);
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 5px;
+    margin: 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 1px 2px 10px 3px var(--azulAgua);
+}

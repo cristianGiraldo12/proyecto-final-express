@@ -1,0 +1,42 @@
+:root {
+    --azul: #363753;
+    --gris: #DFE3EE;
+    --blanco: #FEFEFE;
+    --verde: #5CD2C6;
+    --azulAgua: #8effff;
+    --rosado: #ffeeff;
+}
+
+body{
+    background-color: var(--azul);
+}
+
+/* h1 */
+h1{
+    color: var(--blanco);
+    text-align: center;
+}
+
+/* contenedor de las canciones */
+.contenedorPadre{
+    display: grid;
+    place-items: center;
+}
+
+li{
+    list-style: none;
+    color: var(--blanco);
+    font-size: 30px;
+}
+
+li.listaDeCanciones{
+    text-align: center;
+    border-bottom: solid 3px var(--azulAgua);
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 5px 1px var(--azulAgua);
+}
+
+a{
+    text-decoration: none;
+    color: var(--blanco);
+}

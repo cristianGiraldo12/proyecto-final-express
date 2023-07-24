@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cancionesDetail.css">
+    <title><%= cancion.titulo %></title>
+</head>
+<body>
+
+    <div class="contenedorPadre">
+        <h1><%= cancion.titulo %></h1>
+        <p>Duracion De La Cancion: <%= cancion.duracion + " segundos"%></p>
+        <p>Genero : <%= cancion.generoCanciones.name %></p>
+        <p>Album : <%= cancion.albumCancion.nombre %></p>
+        <p>Artista : <%= cancion.artistaCancion.nombre + " " + cancion.artistaCancion.apellido %></p>
+    </div>
+
+</body>
+</html>

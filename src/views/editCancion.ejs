@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cancionesEdit.css">
+    <title class="titulo">Editar pelicula</title>
+</head>
+
+<body>
+    <div class="contenedorPadre">
+
+    <h1 class="titulo">Pelicula a Editar: <%= Cancion.titulo %></h1>
+    
+    <section class="formulario">
+        <form action="/canciones/edit?_method=put <%= Cancion.id %>" method="POST">
+            <label for="titulo">TITULO: <br> 
+                <input type="text" name="titulo" id="titulo" value="<%= Cancion.titulo %>" required>
+            </label>
+            <br>
+            <br>
+
+            <label for="Duracion">DURACION: <br>
+                <input type="number" name="duracion" id="duracion" value="<%= Cancion.duracion %>" required>
+            </label>
+            <br>
+            <br>
+
+            <label for="genero_id">ID DEL GENERO: <br>
+                <select name="genero_id" id="genero_id" value="<%= Cancion.genero_id %>" required>
+                    <option value="1">1 Rock</option>
+                    <option value="2">2 Pop</option>
+                    <option value="3">3 Jazz</option>
+                    <option value="4">4 Electro</option>
+                    <option value="5">5 Punk</option>
+                    <option value="6">6 Musica Clasica</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label for="album_id">ID DEL ALBUM: <br>
+                <select name="album_id" id="album_id" value="<%= Cancion.album_id %>" required>
+                    <option value="1">1 Monster</option>
+                    <option value="2">2 mini buda</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label for="artista_id">ID DEL ARTISTA: <br>
+                <select name="artista_id" id="artista_id" value="<%= Cancion.artista_id %>" required>
+                    <option value="1">1 Nicolas Sorin</option>
+                    <option value="2">2 Francisco Huici</option>
+                    <option value="3">3 Leo Paganini</option>
+                    <option value="4">4 Hernan Rupolo</option>
+                    <option value="5">5 Alan Fritzler</option>
+                    <option value="6">6 Mariano Bonadio</option>
+                    <option value="7">7 Leo Jurel Costa</option>
+                    <option value="8">8 Ezequiel Piazza</option>
+                </select>
+            </label>
+            <br>
+            <br>
+
+            <div class="botones">
+                <button class="botonAgregar" type="submit"> <strong>ACTUALIZAR</strong></button>
+             <br>
+             <br>            
+             <a href="/canciones" class="botonVolver"> <strong>Listado De Canciones</strong></a>
+            </div>
+        </form>
+     </section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cancionesCreate.css">
+    <title>Creacion De Canciones</title>
+</head>
+<body>
+    
+    <div class="contenedorPadre">
+
+    <h1>Creacion de Canciones</h1>
+
+    <section class="formulario">
+        <form action="/canciones/create" method="POST">
+            <label class="encabesados" for="titulo">TITULO: <br> 
+                <input type="text" name="titulo" id="" required placeholder="Nombre De Cancion">
+            </label>
+            <br>
+            <br>
+
+            <label class="encabesados" for="Duracion">DURACION: <br> 
+                <input type="number" name="duracion" id="" required placeholder="Duracion De Cancion">
+            </label>
+            <br>
+            <br>
+
+            <label class="encabesados" for="genero_id">ID DEL GENERO: <br>
+                <select name="genero_id" id="" required>
+                    <option value="1">1 Rock</option>
+                    <option value="2">2 Pop</option>
+                    <option value="3">3 Jazz</option>
+                    <option value="4">4 Electro</option>
+                    <option value="5">5 Punk</option>
+                    <option value="6">6 Musica Clasica</option>
+                </select>
+            </label>
+            <br>
+            <br>
+
+            <label class="encabesados" for="album_id">ID DEL ALBUM: <br> 
+                <select name="album_id" id="" required>
+                    <option value="1">1 Monster</option>
+                    <option value="2">2 mini buda</option>
+                </select>
+            </label>
+            <br>
+            <br>
+
+            <label class="encabesados" for="artista_id">ID DEL ARTISTA: <br>
+                <select name="artista_id" id="" required>
+                    <option value="1">1 Nicolas Sorin</option>
+                    <option value="2">2 Francisco Huici</option>
+                    <option value="3">3 Leo Paganini</option>
+                    <option value="4">4 Hernan Rupolo</option>
+                    <option value="5">5 Alan Fritzler</option>
+                    <option value="6">6 Mariano Bonadio</option>
+                    <option value="7">7 Leo Jurel Costa</option>
+                    <option value="8">8 Ezequiel Piazza</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <div class="botones">
+                <button class="botonAgregar" type="submit"> <strong>AGREGAR</strong></button>
+             <br>
+             <br>            
+             <a href="/canciones" class="botonVolver"> <strong>Listado De Canciones</strong></a>
+            </div>
+
+        </form> 
+    </section>
+</div>
+
+</body>
+</html>
